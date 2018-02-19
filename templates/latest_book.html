@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load staticfiles  %}
+
+{% block content %}
+
+	{% for book in book_list %}
+							
+		<div>
+			<a href="images/ht.jpg">
+				<img src="{% static "images/ht.jpg" %}" alt="" />
+				<h3>{{book.name}}</h3>
+			</a>
+									
+		</div>
+								
+							
+	{% endfor%}
+	
+{% endblock %}
